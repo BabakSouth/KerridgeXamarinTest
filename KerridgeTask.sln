@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KerridgeTask", "KerridgeTask.csproj", "{4DC8C414-D729-4B66-972D-ED511BFF6686}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KerridgeTask.Tests", "..\KerridgeTask.Tests\KerridgeTask.Tests.csproj", "{EEF6FD99-01AB-41F7-817A-C9E9F9EBBF45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KerridgeTask.Tests", "KerridgeTask.Tests\KerridgeTask.Tests.csproj", "{DD52175D-DC43-436D-AA24-1AE02D27E161}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,10 @@ Global
 		{4DC8C414-D729-4B66-972D-ED511BFF6686}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DC8C414-D729-4B66-972D-ED511BFF6686}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4DC8C414-D729-4B66-972D-ED511BFF6686}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{EEF6FD99-01AB-41F7-817A-C9E9F9EBBF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEF6FD99-01AB-41F7-817A-C9E9F9EBBF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEF6FD99-01AB-41F7-817A-C9E9F9EBBF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEF6FD99-01AB-41F7-817A-C9E9F9EBBF45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD52175D-DC43-436D-AA24-1AE02D27E161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD52175D-DC43-436D-AA24-1AE02D27E161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD52175D-DC43-436D-AA24-1AE02D27E161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD52175D-DC43-436D-AA24-1AE02D27E161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
