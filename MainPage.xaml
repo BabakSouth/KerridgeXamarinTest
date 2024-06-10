@@ -1,0 +1,54 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:KerridgeTask.ViewModels"
+             x:Class="KerridgeTask.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:PlaceDetailViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <!-- Define styles for SearchBar and ListView -->
+        <Style TargetType="SearchBar">
+            <Setter Property="Placeholder" Value="Search places" />
+            <Setter Property="VerticalOptions" Value="Start" />
+            <Setter Property="Margin" Value="10" />
+            <Setter Property="HeightRequest" Value="40" />
+        </Style>
+        <Style TargetType="ListView">
+            <Setter Property="VerticalOptions" Value="FillAndExpand" />
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout  Padding="10" Spacing="10">
+        <SearchBar x:Name="SearchBar"
+                   Placeholder="Search places"
+                   Text="{Binding SearchQuery}"
+                   SearchCommand="{Binding SearchCommand}" />
+
+        <ListView x:Name="PlacesListView"
+                  ItemSelected="OnPlaceSelected"
+                  ItemsSource="{Binding Places}"
+                  IsPullToRefreshEnabled="True"
+                  IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                  CachingStrategy="RecycleElement">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ViewCell>
+                        <StackLayout Padding="10,5,10,5">
+
+                            <Label Text="{Binding mainText}" />
+                            <Label Text="{Binding secondaryText}" />
+                        </StackLayout>
+                    </ViewCell>
+
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
+
